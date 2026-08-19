@@ -94,7 +94,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
